@@ -1,0 +1,58 @@
+body { /* aplica a todo corpo da pagina */
+    font-family: 'segoe VI','segoe VI',tahoma,ganeva,verdana,sans-serif;
+    margin: 0;/* remove qualquer margin ao redor do corpo da pagina*/
+    padding: 0;/*remove qualquer preenchimento interno*/
+    background-color: plum;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:lightpink;
+    box-shadow: 0 0 10px rosybrown(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color:deeppink;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select{
+    width:calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1 px pink;
+    border-radius: 6px;
+    background-color: mistyrose;
+    box-sizing: border-box;
+    color: hotpink;
+}
+
+input[type="simit"]{
+    width: 100%;
+    background-color: violet;
+    color: mediumvioletred;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: backgroud-color 0.3s ease;/* adiciona uma trancisao suave para a mudanca de cor de fundo quando o mouse passa sobre o botao*/
+}
+
+input[type="submit"]:houver{
+    background-color: white;
+
+}
+
+.error{/*se aplica a mensagem de erro exibida nos campos de entrada*/
+    color: red;/*define a cor da mensagem de erro
+    font-size: 12px;/*define o tamanho da fonte*/
+    margin-top: 5px;/*adiciona um espaco acima de cada mensagem de erro*/
+}

@@ -1,0 +1,20 @@
+1. Introdução:
+* Breve explicação sobre a importância da autenticação, autorização e segurança da informação em sistemas de computadores.
+2. Autenticação:
+* Definição e objetivo da autenticação.
+* Métodos de autenticação comuns (por exemplo, nome de usuário e senha, autenticação baseada em token).
+* Exemplos de implementação de autenticação em sistemas da vida real.
+3. Autorização:
+* Significado e importância da autorização.
+* Diferentes modelos de controle de acesso (por exemplo, controle de acesso baseado em função, controle de acesso baseado em atributos).
+* Exemplos de políticas de autorização e permissões de usuário.
+4. Segurança da Informação:
+* Princípios fundamentais da segurança da informação (confidencialidade, integridade, disponibilidade).
+* Ameaças à segurança da informação (por exemplo, phishing, malware, ataques de negação de serviço).
+* Boas práticas de segurança da informação para proteger sistemas e dados.
+5. Exemplos e Casos de Uso:
+* Demonstração de exemplos práticos de como a autenticação, autorização e segurança da informação são aplicadas em sistemas reais.
+* Casos de uso de autenticação em aplicativos da web, autorização em sistemas de gerenciamento de conteúdo, e medidas de segurança em sistemas de pagamento online.
+6. Conclusão:
+* Recapitulação dos principais pontos abordados na apresentação.
+* Destaque da importância de implementar medidas robustas de autenticação, autorização e segurança da informação em todos os sistemas de computadores.

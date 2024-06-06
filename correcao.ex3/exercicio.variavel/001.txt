@@ -1,0 +1,144 @@
+1- crie uma variavel chamada idade e atribua a ela o valor da sua idade
+// Importar o módulo readline-sync
+const readline = require('readline-sync');
+
+// Solicitar ao usuário que insira seu nome
+const nome = readline.question("Por favor, digite seu nome: ");
+
+// Exibir a saudação personalizada
+console.log("Olá, " + nome + "!");
+
+
+2-crie uma variavel chamada altura e atribua a ela sua altura em metros
+// Importar o módulo readline-sync
+const readline = require('readline-sync');
+
+// Solicitar ao usuário que insira os dois números
+const num1 = parseFloat(readline.question("Digite o primeiro número: "));
+const num2 = parseFloat(readline.question("Digite o segundo número: "));
+
+// Calcular a soma dos dois números
+const soma = num1 + num2;
+
+// Exibir a soma
+console.log("A soma de " + num1 + " e " + num2 + " é igual a: " + soma); 
+
+
+3-crie uma variavel chamada soma e atribua a ela o valor da soma das variaveis idade e altura
+// Importar o módulo readline-sync
+const readline = require('readline-sync');
+
+// Solicitar ao usuário que insira um número
+const numero = parseInt(readline.question("Digite um número: "));
+
+// Verificar se o número é par ou ímpar
+if (numero % 2 === 0) {
+    console.log(numero + " é um número par.");
+} else {
+    console.log(numero + " é um número ímpar.");
+}
+
+4-crie uma variavel chamada nome e atribua seu nome completo
+// Loop de 10 a 1
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+}
+
+5-crie uma variavel chamada adulto a atribua a ela o valor true se sua idade for maior ou igual a 18 caso contrario false
+function calcularFatorial(numero) {
+    // Verificar se o número é negativo
+    if (numero < 0) {
+        return "Não é possível calcular o fatorial de um número negativo.";
+    }
+    
+    // Inicializar o fatorial como 1
+    let fatorial = 1;
+    
+    // Calcular o fatorial
+    for (let i = 1; i <= numero; i++) {
+        fatorial *= i;
+    }
+    
+    // Retornar o resultado
+    return fatorial;
+}
+
+// Exemplo de uso da função
+console.log(calcularFatorial(5)); // Saída: 120
+
+
+6-crie uma variavel estudante e atribua o valor true se voce for estudante ou falso caso contrario
+
+
+
+7-crie uma funcao chamada da soma que recebe dois argumentos e retorna a soma dos dois
+//7 - Exercício de validação de senha: Escreva um programa que solicite ao usuário uma senha e verifique se ela atende a certos critérios (por exemplo, ter pelo menos 8 caracteres e conter pelo menos um número e uma letra maiúscula).
+
+// Importar o módulo readline-sync
+const readline = require('readline-sync');
+
+// Função para verificar se a senha atende aos critérios
+function validarSenha(senha) {
+    // Verificar se a senha tem pelo menos 8 caracteres
+    if (senha.length < 8) {
+        return false;
+    }
+    
+    // Verificar se a senha contém pelo menos um número e uma letra maiúscula
+    let temNumero = false;
+    let temMaiuscula = false;
+    for (let caractere of senha) {
+        if (!isNaN(parseInt(caractere))) {
+            temNumero = true;
+        }
+        if (caractere === caractere.toUpperCase()) {
+            temMaiuscula = true;
+        }
+    }
+    
+    return temNumero && temMaiuscula;
+}
+
+// Solicitar ao usuário que insira a senha
+const senha = readline.question("Digite sua senha: ", { hideEchoBack: true });
+
+// Verificar se a senha é válida
+if (validarSenha(senha)) {
+    console.log("Senha válida.");
+} else {
+    console.log("Senha inválida. Certifique-se de que tenha pelo menos 8 caracteres e contenha pelo menos um número e uma letra maiúscula.");
+}
+
+
+8-crie uma funcao chamada carro que aceite argumento,marca modelo e ano e retorne um abjeto com essas propriedades
+// Gerar um número aleatório entre 1 e 100
+const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+
+// Exibir o número aleatório gerado
+console.log("Número aleatório entre 1 e 100:", numeroAleatorio);
+
+
+9-crei uma funcao chamada adicionar que aceite um array e um elemento ao final array
+function celsiusParaFahrenheit(temperaturaCelsius) {
+    // Converter Celsius para Fahrenheit usando a fórmula de conversão
+    const temperaturaFahrenheit = temperaturaCelsius * (9/5) + 32;
+    return temperaturaFahrenheit;
+}
+
+// Exemplo de uso da função
+const temperaturaCelsius = 20;
+const temperaturaFahrenheit = celsiusParaFahrenheit(temperaturaCelsius);
+console.log(temperaturaCelsius + "°C é igual a " + temperaturaFahrenheit.toFixed(2) + "°F");
+
+10-function validarEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
+// Exemplo de uso da função
+const email = "exemplo@email.com";
+if (validarEmail(email)) {
+    console.log("O e-mail " + email + " é válido.");
+} else {
+    console.log("O e-mail " + email + " é inválido.");
+}
